@@ -1,0 +1,124 @@
+.slider {
+  display: block;
+  width: 70%;
+  min-width: 320px;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: transparent;
+  padding-top: 21px;
+  &__item {
+    display: block;
+    min-width: 220px;
+    height: 326px;
+    outline: none;
+    background: url("../assets/slider-woman.png") 100%, no-repeat;
+    background-size: cover;
+  }
+  &__banner-container {
+    display: block;
+    width: 500px;
+    min-width: 220px;
+    height: 128px;
+    background-color: #d2a66b;
+    opacity: 0.88;
+    margin: 99px 0 99px 70px;
+  }
+  &__banner {
+    display: block;
+    width: 470px;
+    min-width: 220px;
+    height: 88px;
+    color: #ffffff;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 47.66px;
+    padding: 15px 0 20px 33px;
+  }
+  &__button {
+    display: block;
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+    padding: 28px 10px 40px;
+    background-color: #d2a66b;
+    opacity: 0.88;
+    border: none;
+    outline: none;
+    &:hover {
+      background-color: #ffffff;
+      opacity: 0.88;
+      transition: 0.8s;
+    }
+    &:hover:before {
+      color: #cb944c;
+    }
+  }
+  &__previous-button:before {
+    content: "‹";
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  &__next-button {
+    right: 0;
+    &:before {
+      content: "›";
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+  @media all and (max-width: 1264px) {
+    width: 96%;
+    &__banner-container {
+      width: 287px;
+      height: 65px;
+    }
+    &__banner {
+      width: 265px;
+      height: 45px;
+      font-size: 23px;
+      line-height: 24.12px;
+      padding-top: 7px;
+    }
+    &__button {
+      padding-bottom: 5px;
+      padding-top: 0px;
+      top: 42.5%;
+    }
+    &__next-button {
+      right: 1px;
+    }
+  }
+  @media all and (max-width: 994px) {
+    margin-top: -15px;
+    /*.slick-dots li button {
+      display: none;
+    }*/
+  }
+  @media all and (max-width: 460px) {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    &__button {
+      top: 43%;
+      zoom: 0.5;
+    }
+    &__banner-container {
+      width: 191px;
+      height: 43px;
+    }
+    &__banner {
+      width: 163px;
+      font-size: 15px;
+      line-height: 17.78px;
+      padding-top: 5px;
+    }
+    &__item {
+      background: url("../assets/mobile/slider-item.png") 100%, no-repeat;
+      background-size: cover;
+    }
+  }
+}

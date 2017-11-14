@@ -1,5 +1,7 @@
 @import url(header.css);
 @import url(main.css);
+@import url(slick.css);
+@import url(slick-theme.css);
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 *,
 *:before,
