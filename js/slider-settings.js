@@ -7,6 +7,14 @@
             nextArrow:$(".slider__next-button"),
             arrows: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 994,
+                    settings: {
+                        dots:false
+                    }
+                }
+            ]
     });
     });
