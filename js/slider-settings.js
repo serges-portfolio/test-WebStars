@@ -2,7 +2,7 @@
         $('.slider').slick({
             dots: true,
             infinite: true,
-            slide: "span",
+            slide: "section",
             prevArrow:$(".slider__previous-button"),
             nextArrow:$(".slider__next-button"),
             arrows: true,
